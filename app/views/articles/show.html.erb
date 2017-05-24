@@ -1,0 +1,17 @@
+<div class="articleTitle">
+<h1>  <%= @article.title %></h1>
+</div>
+<div class="articleAutor">
+  <%= @article.nameAuthor %>
+</div>
+<div class="articleText">
+  <%= @article.text %>
+</div>
+
+
+
+<div class="articlePicture">
+  <%=image_tag(@article.picture.url, alt: @article.title) if @article.picture_stored? %>
+</div>
+
+<%= link_to 'Back', articles_path %>

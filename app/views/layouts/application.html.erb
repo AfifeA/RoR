@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Blo</title>
+    <%= stylesheet_link_tag 'application.css', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application.js', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+    <%= csrf_meta_tags %>
+    </head>
+
+  <body>
+    <header>
+      <div class="topline"></div>
+              <div class="container">
+<div class="banner"><%= image_tag("banner.jpg") %> </div>
+          <div class="navbar navbar_ clearfix">
+
+
+            <div class="lg"></div>
+                 <div class="button"><%= link_to 'Опубликовать историю', new_article_path %></div>
+          </div>
+
+         <div class="border"></div>
+
+          </div>
+
+           </header>
+           <div class="container content">
+    <div class="row">
+    <%= yield %>
+  </div>
+</div>
+<!--content-->
+  </body>
+</html>

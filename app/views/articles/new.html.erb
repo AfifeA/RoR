@@ -1,0 +1,26 @@
+  <div class="overlay"><div>
+    <div class="newArticle">
+    
+    <%= form_for :article, url: articles_path do |f| %>
+    <div class="exitButton"> <%= link_to 'X', articles_path %></div>
+  <div class="newTitle">  <h1>Добавьте свою историю </h1></div>
+
+
+  <p>
+      <%= f.text_field :title, placeholder: "Заголовок" %>
+  </p>
+  <p>
+      <%= f.text_field :nameAuthor, placeholder:"Автор"%>
+
+  <p>
+      <%= f.text_area :text, placeholder:"Текст"  %>
+  </p>
+
+  <p>
+   <%= f.file_field :picture_uid, as: :file, label: "Image" %>
+  </p>
+  <div class="submitButton">
+    <%= f.submit "Отравить"%>
+  </div>
+<% end %>
+</div>

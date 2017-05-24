@@ -1,0 +1,88 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.header_menu {
+    height: 100px;
+}
+.lg {
+  float: left;
+    width: 280px;
+    height: 107px;
+    background: url(logo.png) no-repeat;
+}
+.span-12.header_menu {
+    background: rgba(255, 255, 255, 0.57);
+    padding: 11px;
+    box-shadow: 5px 2px 22px #3c3838;
+}
+.button {
+
+    box-shadow: -1px 1px 6px #505758;
+    border-radius: 4px;
+    padding: 10px;
+    background: #1d8af9;
+    float: right;
+
+    text-align: center;
+}
+.button a {
+    color: #f9f9f9;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.navbar.navbar_.clearfix {
+    background: rgba(255, 255, 255, 0.81);
+    margin-top: 45px;
+    padding: 10px;
+}
+.topline {
+    width: 100%;
+    background: #1d60f9;
+    height: 5px;
+}
+.banner {
+  width: auto;
+  /* margin-right: auto; */
+  /* margin-left: auto; */
+  position: relative;
+  height: 500px;
+  /* top: 5px; */
+  overflow: hidden;
+  /* margin-bottom: 336px; */
+}
+.overlay {
+    background: rgba(20, 21, 20, 0.61);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.banner img {
+    width: 100%;
+}
+.navbar {
+    top: 0;
+    position: absolute;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    width: 1140px;
+}
